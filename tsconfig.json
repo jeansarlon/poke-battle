@@ -4,7 +4,11 @@
     "lib": [
       "dom",
       "dom.iterable",
-      "esnext"
+      "esnext",
+      "es6",
+      "es2017",
+      "es2018.promise",
+      "es2019.array"
     ],
     "allowJs": true,
     "skipLibCheck": true,
