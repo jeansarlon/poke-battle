@@ -994,6 +994,16 @@
   resolved "https://registry.yarnpkg.com/@jeansarlon/eslint-config-base/-/eslint-config-base-1.0.0.tgz#5437de8a9be0d800f2529105af6e3a1feb969be0"
   integrity sha512-xYFiDlYT4HVSiByuoorvG4krq9Q/x3HFurOqcjrzzQPbcRzuNZ+jo0BepNueDeCF92EGat8I/3euCEOjvnXbuw==
 
+"@jeansarlon/eslint-config-react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jeansarlon/eslint-config-react/-/eslint-config-react-1.0.0.tgz#02a9140b965c1f216ade416524ab64577a029e74"
+  integrity sha512-Hb7Y2qx/dAixDr0Li8v5knOXjPcJc2/pel4T6tAX8KaOzdza2S7AyI5GKhBbaB5gl+z+UBhynLo5YJYqAIwCtQ==
+
+"@jeansarlon/eslint-config-typescript@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jeansarlon/eslint-config-typescript/-/eslint-config-typescript-1.0.0.tgz#a671fa2f7912f387cf0ffbed425cd7a36a46b4cc"
+  integrity sha512-c0qvPiib+OQ8T0upo2bN0VVFaksuAtGQg1SR+vT0jSAAq9RSUH29zlawPkPohXebmM0wVlLFTBbiIxfs2JY02A==
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
