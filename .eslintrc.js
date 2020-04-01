@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    './config/eslint-config-base',
+    '@jeansarlon/eslint-config-base',
     './config/eslint-config-react',
     './config/eslint-config-typescript'
   ],
