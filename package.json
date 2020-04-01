@@ -1,6 +1,6 @@
 {
   "name": "poke-battle",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@jeansarlon/eslint-config-base": "^1.0.0",
