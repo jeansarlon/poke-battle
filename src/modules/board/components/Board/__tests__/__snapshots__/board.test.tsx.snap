@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Board should renders component 1`] = `
+<div>
+  <div
+    class="board"
+  >
+    Board
+    <div
+      class="hand"
+    >
+      hand
+    </div>
+  </div>
+</div>
+`;
