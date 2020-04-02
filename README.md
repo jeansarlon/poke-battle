@@ -1,4 +1,4 @@
-This is a POC to use [socket.io](https://socket.io/) to make a realtime game using [pokemon TCG API](https://api.pokemontcg.io) and React.
+This is a POC to use [socket.io](https://socket.io/) to make a realtime game using [pokemon TCG SDK](hhttps://github.com/PokemonTCG/pokemon-tcg-sdk-javascript) and React.
 
 ## Available Scripts
 

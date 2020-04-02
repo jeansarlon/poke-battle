@@ -19,6 +19,7 @@
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-react": "^7.19.0",
     "node-sass": "^4.13.1",
+    "pokemontcgsdk": "^1.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
