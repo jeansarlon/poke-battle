@@ -6,6 +6,11 @@ exports[`Hand should mount Component 1`] = `
     class="hand"
   >
     hand
+    <div
+      class="card"
+    >
+      cards
+    </div>
   </div>
 </div>
 `;

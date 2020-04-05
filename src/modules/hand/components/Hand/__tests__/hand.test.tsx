@@ -6,9 +6,9 @@ describe('Hand', () => {
   test('should mount Component', () => {
     const { container } = render(<Hand />);
 
-    expect(container).toMatchSnapshot();
     const element = container.querySelector('.hand');
     expect(element).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });
 
