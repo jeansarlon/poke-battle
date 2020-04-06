@@ -25,12 +25,15 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "stubby": "^4.1.1",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "yarn run stubby | NODE_ENV=development react-scripts start",
     "build": "react-scripts build",
+    "stubby": "stubby --watch --data test/stubs/stubby.json",
     "test": "react-scripts test",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
     "test:watch": "react-scripts test --watch",
     "eject": "react-scripts eject",
     "lint:fix": "npm run lint -- --fix",
