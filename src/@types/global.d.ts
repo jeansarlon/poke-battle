@@ -9,7 +9,7 @@ declare global {
       document: Document
       window: Window
       navigator: Navigator
-      ENVIRONMENT: string
+      environment: string
     }
   }
 
@@ -18,6 +18,5 @@ declare global {
     $?: any
     define?: any
   }
-
-  const dataLayer: DataLayer | any;
 }
+export {};
