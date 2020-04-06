@@ -7,10 +7,8 @@ exports[`Hand should mount Component 1`] = `
   >
     hand
     <div
-      class="card"
-    >
-      cards
-    </div>
+      class="cards"
+    />
   </div>
 </div>
 `;

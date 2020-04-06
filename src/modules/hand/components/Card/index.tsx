@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
-import { getCards, getSets } from '../../../../services/pokemonTCG';
+import { getCards } from '../../../../services/pokemonTCG';
 import { CardFiltersBuilder, IcardFilter } from '../../../../services/pokemonTCG/getCards/';
 
 const Card = () => {
-  const [cards, setcards] = useState<PokemonTCG.Card[]>([]);
-  const [sets, setsets] = useState<PokemonTCG.Set[]>([]);
+  const [cards, setcards] = useState<PokemonTCG.Card[] | undefined>([]);
 
   useEffect(() => {
     (async () => {
@@ -18,15 +17,14 @@ const Card = () => {
     })();
   }, []);
 
-  useEffect(() => {
-    (async () => {
-      const response = await getSets();
-      setsets(response);
-    })();
-  }, []);
-
   return (
-    <div className="card">cards</div>
+    <div className="cards">
+      {
+        cards
+          ? cards.map((card) => (<span className="card" key={card.id}>{card.name}</span>))
+          : <span className="no-cards">Mão vazia</span>
+      }
+    </div>
   );
 };
 export default Card;
