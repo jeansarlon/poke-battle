@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card should mount Component when has cards 1`] = `
+exports[`Card should mount Component when has name 1`] = `
 <div>
   <div
-    class="cards"
+    class="card"
   >
     <span
-      class="card"
+      class="card-name"
     >
       pikachu
     </span>
@@ -14,15 +14,13 @@ exports[`Card should mount Component when has cards 1`] = `
 </div>
 `;
 
-exports[`Card should mount Component when has no cards 1`] = `
+exports[`Card should mount Component when not has name 1`] = `
 <div>
   <div
-    class="cards"
+    class="card"
   >
-    <span
-      class="no-cards"
-    >
-      Mão vazia
+    <span>
+      nao há card
     </span>
   </div>
 </div>
