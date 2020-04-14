@@ -9,10 +9,15 @@ exports[`Board should renders component 1`] = `
     <div
       class="hand"
     >
-      hand
       <div
         class="cards"
-      />
+      >
+        <span
+          class="no-cards"
+        >
+          Mão vazia
+        </span>
+      </div>
     </div>
   </div>
 </div>
