@@ -4,8 +4,8 @@ import App from './App';
 
 describe('App', () => {
   test('should renders component', () => {
-    const { container } = render(<App />);
-    const element = container.querySelector('.App');
+    const { getByTestId } = render(<App />);
+    const element = getByTestId('App');
     expect(element).toBeInTheDocument();
   });
 });

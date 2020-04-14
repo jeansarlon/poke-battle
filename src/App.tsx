@@ -3,7 +3,7 @@ import './App.scss';
 import { Board } from './modules/board/components';
 
 const App = () => (
-  <div className="App">
+  <div data-testid="App" className="App">
     <Board />
   </div>
 );
