@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
-import { getCards } from '../../../../services/pokemonTCG';
-import { CardFiltersBuilder, IcardFilter } from '../../../../services/pokemonTCG/getCards/';
+import React from 'react';
+import { ICard } from 'pokemon-tcg-sdk-typescript/dist/sdk';
 
-const Card = () => {
-  const [cards, setcards] = useState<PokemonTCG.Card[] | undefined>([]);
+const Card = ({ name }: ICard) => (
+  <div className="card">
+    {
+      name
+        ? (<span className="card-name">{name}</span>)
+        : (<span>nao há card</span>)
 
-  useEffect(() => {
-    (async () => {
-      const data: IcardFilter[] = new CardFiltersBuilder()
-        .filter({ name: 'supertype', value: 'pokemon' })
-        .build();
-
-      const response = await getCards(data);
-      setcards(response);
-    })();
-  }, []);
-
-  return (
-    <div className="cards">
-      {
-        cards
-          ? cards.map((card) => (<span className="card" key={card.id}>{card.name}</span>))
-          : <span className="no-cards">Mão vazia</span>
-      }
-    </div>
-  );
-};
+    }
+  </div>
+);
 export default Card;
