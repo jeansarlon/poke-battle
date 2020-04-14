@@ -4,10 +4,11 @@ import { IcardFilter } from './CardFiltersBuilder';
 const getFromStuby = async () => {
   const {
     REACT_APP_POKEMON_TCG_HOST,
-    REACT_APP_POKEMON_TCG_CARDS_PATH
+    REACT_APP_POKEMON_TCG_CARDS_PATH,
+    REACT_APP_POKEMON_API_VERSION
   } = process.env;
 
-  const res = await fetch(`${REACT_APP_POKEMON_TCG_HOST}${REACT_APP_POKEMON_TCG_CARDS_PATH}`);
+  const res = await fetch(`${REACT_APP_POKEMON_TCG_HOST}/${REACT_APP_POKEMON_API_VERSION}/${REACT_APP_POKEMON_TCG_CARDS_PATH}`);
   const data = await res.json();
   return data.cards;
 };
