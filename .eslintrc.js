@@ -2,7 +2,10 @@ module.exports = {
   extends: [
     '@jeansarlon/eslint-config-base',
     '@jeansarlon/eslint-config-react',
-    '@jeansarlon/eslint-config-typescript'
+    '@jeansarlon/eslint-config-typescript',
+    'eslint-plugin-import/errors',
+    'eslint-plugin-import/warnings',
+    'eslint-plugin-import/typescript'
   ],
   env: {
     browser: true
