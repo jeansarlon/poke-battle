@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, act } from '@testing-library/react';
 import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
-import { getCards } from '../../../../../services/pokemonTCG';
+import { getCards } from '@services/pokemonTCG';
 import Hand from '..';
 
-jest.mock('../../../../../services/pokemonTCG');
+jest.mock('@services/pokemonTCG');
 
 describe('Hand', () => {
   beforeEach(() => {

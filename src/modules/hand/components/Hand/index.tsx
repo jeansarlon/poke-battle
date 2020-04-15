@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ICard } from 'pokemon-tcg-sdk-typescript/dist/sdk';
-import { IcardFilter } from '../../../../services/pokemonTCG/getCards/CardFiltersBuilder';
-import { CardFiltersBuilder } from '../../../../services/pokemonTCG/getCards';
-import { getCards } from '../../../../services/pokemonTCG';
+import getCards, { CardFiltersBuilder, IcardFilter } from '@services/pokemonTCG/getCards';
 import { Card } from '..';
 
 const getcards = async (callback: Function) => {

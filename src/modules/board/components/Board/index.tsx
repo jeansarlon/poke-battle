@@ -1,5 +1,6 @@
 import React from 'react';
-import { Hand } from '../../../hand/components';
+import { Hand } from '@modules/hand/components';
+
 
 const Board = ({ styleclass, title }: Record<string, string>) => (
   <div className={styleclass}>

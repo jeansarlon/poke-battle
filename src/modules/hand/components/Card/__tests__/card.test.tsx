@@ -1,7 +1,6 @@
 import React from 'react';
-import { render, act } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { PokemonTCG } from 'pokemon-tcg-sdk-typescript';
-import { getCards } from '../../../../../services/pokemonTCG';
 import Card from '..';
 
 describe('Card', () => {

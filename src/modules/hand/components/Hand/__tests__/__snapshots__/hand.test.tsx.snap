@@ -8,15 +8,11 @@ exports[`Hand should mount Component with cards 1`] = `
     <div
       class="cards"
     >
-      <div
-        class="card"
+      <span
+        class="no-cards"
       >
-        <span
-          class="card-name"
-        >
-          pikachu
-        </span>
-      </div>
+        Mão vazia
+      </span>
     </div>
   </div>
 </div>
